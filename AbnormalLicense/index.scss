@@ -1,0 +1,60 @@
+:global{
+  .p-abnormal-license{
+    .am-tabs-tab-bar-wrap{
+      position: fixed;
+      z-index: 100;
+    }
+    .am-tabs-pane-wrap{
+      height: calc(100vh - 40px);
+      overflow: auto;
+    }
+    .am-tabs-content-wrap{
+      padding-top: 40px;
+    }
+    .am-tabs-default-bar-tab {
+      width: 15vw !important;
+    }
+    .am-tabs-default-bar-tab:nth-child(5){
+      width: 40vw !important;
+    }
+    .am-tabs-default-bar-underline{
+      width: 5vw!important;
+      left: 5vw!important;
+      height: 4px;
+      border-radius: 2px;
+      background: #108ee9;
+    }
+    &.tabIndex1 .am-tabs-default-bar-underline{
+      left: 20vw!important;
+    }
+    &.tabIndex2 .am-tabs-default-bar-underline{
+      left: 35vw!important;
+    }
+    &.tabIndex3 .am-tabs-default-bar-underline{
+      left: 50vw!important;
+    }
+    &.tabIndex4 .am-tabs-default-bar-underline{
+      left: 77.5vw!important;
+    }
+    .am-modal-button-group-v .am-modal-button{
+      color: #90959a;
+    }
+
+  }
+}
+.no_data{
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.tips {
+  color: #90959a;
+  font-size: 14px;
+  text-align: left;
+}
+
+//body .tipsModal :global(.am-modal-title)  {color: #fe981e !important; border-bottom: 1px solid #eee; padding-bottom: 10px;}
+//body .tipsModal :global(.am-modal-button)  {color: #fe981e !important;}

@@ -1,0 +1,107 @@
+.item{
+  margin: 20px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+}
+.title{
+  font-size: 16px;
+  color: #323232;
+  line-height: 24px;
+  padding-bottom: 6px;
+  border-bottom: 1PX solid #f2f2f2;
+}
+.tit_icon{
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #ff0000;
+  vertical-align: 2px;
+  margin-right: 4px;
+}
+.textBox{
+  position: relative;
+  color: #737373;
+  font-size: 12px;
+  line-height: 28px;
+  padding: 10px 0;
+  //border-bottom: 1px solid #eeeeee;
+  .li{
+    display: flex;
+  }
+}
+.processed{
+  background-image: url("../../../../assets/images/icon_processed_red.png");
+  width: 100px;
+  height: 100px;
+  background-size: 100px;
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+}
+.Textarea_tit{
+  line-height: 44px;
+  color: #666;
+}
+.Textarea{
+  border: 1PX solid #f2f2f2;
+  border-radius: 4px;
+  color: #323232;
+  textarea::placeholder{
+    font-size: 12px;
+  }
+}
+.button_wrap{
+  text-align: right;
+  padding-top: 15px;
+}
+.button{
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+:global{
+  .com-alitem{
+    .disabled{
+      background-color: #ccc;
+      color: #fff;
+      border-color: #ccc;
+      &.am-button-primary::before{
+        border-color: #ccc;;
+      }
+    }
+    .am-list-item{
+      padding-left: 0;
+    }
+    .am-list-body div:not(:last-child) .am-list-line::after{
+      margin-bottom: 1PX;
+    }
+    .am-list-item .am-list-line{
+      padding-right: 4px;
+    }
+    .am-list-item .am-list-line .am-list-extra{
+      color: #FEA54C;
+      font-size: 14px;
+      flex-basis: 43%;
+    }
+    .am-list-item.picked .am-list-line .am-list-extra{
+      color: #323232;
+    }
+    .am-list-item .am-list-line .am-list-content{
+      font-size: 14px;
+      color: #666;
+    }
+    .am-textarea-control textarea{
+      font-size: 14px;
+    }
+    .am-textarea-has-count{
+      padding-bottom: 0;
+      padding-left: 15px;
+    }
+
+  }
+}
